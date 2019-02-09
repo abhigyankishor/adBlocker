@@ -1,6 +1,6 @@
 //console.log("my script works!");
 
-chrome.webRequest.onBeforeRequest.adlistener(function(details)){
+chrome.webRequest.onBeforeRequest.addListener(function(details)){
   console.log("blocking:", details.url);
   return {cancel : true};
 },
